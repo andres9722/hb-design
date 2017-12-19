@@ -1,0 +1,21 @@
+// Config
+@import "config/variables";
+@import "config/mixins";
+
+// Theme (colors and fonts)
+@import "theme/typography";
+
+// Base and elements (generic)
+@import "base/base";
+
+// MODULOS (SMACSS) O COMPONENTES (ITCSS)
+@import "components/header";
+@import "components/menu";
+@import "components/banner";
+@import "components/main";
+@import "components/work";
+@import "components/subscribe";
+@import "components/footer";
+@import "components/form-contact";
+
+

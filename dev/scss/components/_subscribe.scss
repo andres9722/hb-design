@@ -1,0 +1,42 @@
+.main-subscribe {
+  padding: 2em 0.5em;
+  text-align: center;
+
+  @include from($medium) {
+    padding: 2em 3em;
+  }
+
+  &__title {
+    color: $black;
+    letter-spacing: 1px;
+    font-family: $font-text;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: $font-color;
+    font-size: .9em;
+    margin-bottom: 2em;
+  }
+
+  &__widget {
+    display: flex;
+
+    .main-subscribe__email {
+      width: 100%;
+      border: 1px solid $border-color;
+      font-size: 1em;
+      opacity: .7;
+      padding: .5em;
+    }
+
+    .main-subscribe__button {
+      width: 100%;
+      padding: .5em;
+      background: $principal-color;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.main-nav {
+  width: 100%;
+  height: 100vh;
+  background: rgba(black, .94);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-100%);
+  z-index: 20;
+  padding: 0.5em;
+  transition: transform .5s ease;
+
+  &.show {
+    transform: translate(0);
+  }
+
+  @include from($large) {  
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: absolute;
+   transform: translate(0);
+   top: 0;
+   right: 0;
+   height: 45px;
+   background: transparent;
+  }
+
+  .main-nav__icon {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 1em;
+    right: 0.5em;
+    filter: invert(100%);
+
+    @include from($large) {
+      display: none;
+    }
+  }
+
+  .main-menu {
+    margin-bottom: 1em;
+
+    @include from($large) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      position: absolute;
+      right: 0;
+    }
+
+    &__link {
+      color: $white;
+      font-size: 2.8em;
+      text-transform: uppercase;
+      text-shadow: .5px 0 2px $white;
+
+      @include from($large) {
+        font-size: 1em;
+        padding: 0 1em;
+      }
+    }
+  }
+
+  &__footer {
+    color: $white;
+    padding: 1em 0;
+    border-top: 1px solid rgba($white, .8);
+    border-bottom: 1px solid rgba($white, .8);
+    margin-bottom: 1em;
+
+    @include from($large) {
+      display: none;
+    }
+
+    .nav-footer__dir, .nav-footer__tel, .nav-footer__cra {
+      font-size: 0.9em;
+    }
+  }
+
+  &__social {
+    display: flex;
+
+    @include from($large) {
+      display: none;
+    }
+
+    .nav-social__item {
+      width: 40px;
+      height: 40px;
+      margin-right: .5em;
+    }
+  }
+}

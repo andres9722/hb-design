@@ -1,0 +1,88 @@
+.section {
+  padding: 0.5em;
+  text-align: center;
+
+  @include from($medium) {
+    padding: .5em 3em;
+  }
+
+  @include from($large) {
+    padding: 5em 0;
+  }
+
+  &-title {
+    color: $black;
+    font-size: 2.6em;
+    font-family: $font-text;
+    letter-spacing: 1px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &-text {
+    margin-top: 1em;
+    color: $font-color;
+    padding-bottom: 1em;
+    font-size: 0.95em;
+  }
+
+  &-content {
+    color: $font-color;
+    letter-spacing: 3px;
+    font-size: 0.9em;
+  }
+}
+
+.services {
+  background: linear-gradient(90deg, $secondary-color 60%, rgba($secondary-color, .7));  
+  position: relative;
+  padding: 6em 0.5em 2em;
+  color: $white;
+
+  @include from($medium) {
+    padding: 6em 3em 2em;
+  }
+
+  @include from($large) {
+    padding: 5em 15em 2em;
+  }
+
+  &::before {
+    content: url('https://image.flaticon.com/icons/svg/417/417739.svg');
+    filter: invert(100%);
+    position: absolute;
+    top: 1em;
+    transform: translate(-50%);
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  &-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: $font-text;
+    text-shadow: 3px 0 1px darken($secondary-color, 10);
+    padding-bottom: .5em;
+  }
+
+  &-text {
+    color: rgba($white, .8);
+  }
+
+  &:nth-child(1) {
+    margin-top: 1.5em;
+  }
+
+  &:nth-child(2) {
+    &::before {
+      content: url('https://image.flaticon.com/icons/svg/584/584079.svg');
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      content: url('https://image.flaticon.com/icons/svg/263/263094.svg');
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.main-footer {
+  padding: 1em .5em;
+  text-align: center;
+  border-top: 1px solid $border-color;
+
+  .social {
+    display: flex;
+
+    @include from($medium) {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    &-icon {
+      width: 100%;
+      font-size: 2em;
+      margin-top: .5em;
+      color: $font-color;
+    }
+  }
+}

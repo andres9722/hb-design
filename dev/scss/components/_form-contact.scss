@@ -1,0 +1,20 @@
+.form-contact {
+  padding: 5em .5em 2em;
+  width: 65%;
+  margin: 0 auto;
+
+  label, select, input, textarea {
+    margin-bottom: .3em;
+    padding: 0.3em;
+  }
+
+  input[type="submit"] {
+    margin-top: .5em;
+    border: 0;
+    background: $secondary-color;
+    width: 40%;
+    color: $white;
+    text-transform: uppercase;
+    padding: 0.5em;
+  }
+}

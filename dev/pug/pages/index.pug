@@ -1,0 +1,48 @@
+extends ../includes/template
+
+block banner
+  .main-banner 
+    p.main-banner__text#str-machine 
+    h2.main-banner__title#main-banner__title  the makers exciting 
+    p.main-banner__subtitle#main-banner__subtitle  communications
+    a(href="./contact.html").main-banner__button Learn more
+
+block main
+  section.section.l-container
+    p.section-content MAKING DIGITAL MARKETING EASY!
+    h1.section-title WELCOME
+    p.section-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi minima odio veritatis fugit iure aliquam sunt porro iste, necessitatibus officiis, magni est praesentium culpa sed neque maiores, eligendi blanditiis!
+    p.section-text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nostrum ea laudantium ad saepe error similique odit maiores, ex fugit iure dolorem sed aliquam doloribus tempora libero ipsa provident nemo!
+
+  section.services-container
+    article.section.services
+      h1.services-title Create
+      p.services-text The time has come to give life to the project of your dreams. Create is our first stage in developing your brand and your business.
+
+    article.section.services
+      h1.services-title Boost
+      p.services-text Optimizing your brand is a key step in achieving the success of your business. It is not enough just to exist, you need to be noticed by the world.
+
+    article.section.services
+      h1.services-title Transform
+      p.services-text Do you want to raise the level of your business and conquer the world? Let’s transform your business through clever and creative digital marketing.
+
+block work
+  section.section-work.l-container
+    article.section-work__item
+      .section-work__info
+        p.section-content FIND OUT MORE ABOUT ARTMAKERZ
+        h1.section-title RECENT WORKS
+        p.section-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quasi minima odio veritatis fugit iure aliquam sunt porro iste, necessitatibus officiis, magni est praesentium culpa sed neque maiores, eligendi blanditiis!
+        p.section-text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nostrum ea laudantium ad saepe error similique odit maiores, ex fugit iure dolorem sed aliquam doloribus tempora libero ipsa provident nemo!
+      img.section-work__img(src="http://www.artmakerz.net/wp-content/uploads/2016/01/starbucks-feature-image.jpg", alt="", srcset="")
+      img.section-work__img(src="http://www.artmakerz.net/wp-content/uploads/2017/07/Tech20-Portfolio-Website3-960x960.jpg", alt="", srcset="")
+      img.section-work__img(src="http://www.artmakerz.net/wp-content/uploads/2016/11/featured-mace-snack-packs-small.jpg", alt="", srcset="")
+
+block subscribe 
+  section.main-subscribe.l-container
+    h3.main-subscribe__title Sign up to our newsletter
+    p.main-subscribe__text Everything you need to about the digital world
+    .main-subscribe__widget
+      input.main-subscribe__email(type="email", name="" placeholder="Your Email Address")
+      a.main-subscribe__button Subscribe

@@ -1,0 +1,42 @@
+.main-header {
+  background: linear-gradient(90deg, $principal-color 40%, rgba($principal-color, .9));
+  padding: 0.5em;
+  box-shadow: 2px 0 2px $black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: background .5s ease;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  @include from($medium) {
+    padding: .5em 3em;
+  }
+
+  &.sticky {
+    background: $black;
+  }
+
+  &__title {
+    color: $white;
+    letter-spacing: 1px;
+    text-shadow: .5px 0 2px $black;
+  }
+
+  &__icon {
+    width: 45px;
+    height: 45px;
+    filter: invert(100%) drop-shadow(.5px 0 1px $black);
+
+    @include from($large) {
+      display: none;
+    }
+  }
+}
